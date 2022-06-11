@@ -19,6 +19,7 @@ namespace ApiProdutos.Services.Configurations
                 (options => options.UseSqlServer(connectionString));
 
             builder.Services.AddTransient<IProdutoRepository, ProdutoRepository>();
+            builder.Services.AddTransient<IUsuarioRepository, UsuarioRepository>();
         }
     }
 }

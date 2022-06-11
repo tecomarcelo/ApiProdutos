@@ -11,21 +11,27 @@ using System.Threading.Tasks;
 namespace ApiProdutos.Infra.Data.Repositories
 {
     /// <summary>
-    /// Classe de repositório para Produto
+    /// Classe de repositório para Usuário
     /// </summary>
-    public class ProdutoRepository : BaseRepository<Produto>, IProdutoRepository
+    public class UsuarioRepository : BaseRepository<Usuario>, IUsuarioRepository
     {
         //atributo
         private readonly SqlServerContext _sqlServerContext;
 
         //construtor para inicializar o atributo
-        public ProdutoRepository(SqlServerContext sqlServerContext)
+        public UsuarioRepository(SqlServerContext sqlServerContext)
             : base(sqlServerContext)
         {
             _sqlServerContext = sqlServerContext;
         }
+
+        public Usuario Get(string login, string senha)
+        {
+            return _sqlServerContext.Usuario
+                .FirstOrDefault(u => u.Login.Equals(login)
+                                  && u.Senha.Equals(senha));
+        }
     }
 }
-
 
 

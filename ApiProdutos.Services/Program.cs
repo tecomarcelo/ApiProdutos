@@ -10,6 +10,7 @@ AutoMapperConfiguration.AddAutoMapper(builder);
 CorsConfiguration.AddCors(builder);
 EntityFrameworkConfiguration.AddEntityFramework(builder);
 SwaggerConfiguration.AddSwagger(builder);
+JwtConfiguration.AddJwt(builder);
 
 #endregion
 
@@ -20,6 +21,7 @@ app.UseSwaggerUI();
 
 CorsConfiguration.UseCors(app);
 
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();

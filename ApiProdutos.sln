@@ -11,9 +11,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Repository Layer", "2 -
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Tests", "3 - Tests", "{BCB5BBD9-A633-4444-BF77-7938CA42F131}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiProdutos.Infra.Data", "ApiProdutos.Infra.Data\ApiProdutos.Infra.Data.csproj", "{2F988932-0A8E-461E-9FCA-9260EC78399B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiProdutos.Infra.Data", "ApiProdutos.Infra.Data\ApiProdutos.Infra.Data.csproj", "{2F988932-0A8E-461E-9FCA-9260EC78399B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiProdutos.Tests", "ApiProdutos.Tests\ApiProdutos.Tests.csproj", "{2370F239-3250-4F52-8526-A9E627B60D7A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiProdutos.Tests", "ApiProdutos.Tests\ApiProdutos.Tests.csproj", "{2370F239-3250-4F52-8526-A9E627B60D7A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{EE43BD67-E75A-44EE-9A94-0C478078CD93}"
 	ProjectSection(SolutionItems) = preProject
